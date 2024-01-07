@@ -1491,8 +1491,6 @@ public extension Array where Element == [Float] {
   }
   
   static func -(lhs: Float, rhs: Self) -> Self {
-    let left = lhs
-            
     var result: Self = []
     for d in 0..<rhs.count {
       let new2d: Element = lhs - rhs[d]
